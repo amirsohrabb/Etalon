@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+}
+.header {
+  justify-content: space-between;
+  padding-top: 25px;
+  align-items: center;
+}
+.header p {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 40px;
+  color: #ffffff;
+}
+.contents span {
+  margin-right: 32px;
+  color: #ffffff4d;
+}
+.contents span:hover {
+  color: #ffffff;
+}
+.header img {
+  padding: 12px;
+  background-color: #fdde67;
+  border-radius: 50%;
+}
+.hero {
+  margin-top: 85.13px;
+}
+.head {
+  background: linear-gradient(110.6deg, #2a4032 0.81%, #3a5e46 100%);
+  height: 104vh;
+}
+.right-side {
+  width: 50%;
+  position: relative;
+}
+.left-side {
+  width: 50%;
+}
+.left-side p {
+  margin: 24px 0;
+}
+.sale-text-1 {
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 72px;
+  color: #ffffff4d;
+}
+.sale-text-2 {
+  font-size: 112px;
+  font-weight: 900;
+  line-height: 100px;
+  letter-spacing: 0.13em;
+  color: #ffffff;
+}
+.sale-text-3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffffcc;
+}
+.sale-button {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: #181818;
+  border-radius: 6px;
+  background-color: #fdde67;
+  margin-top: 25px;
+}
+.circle-1 {
+  position: absolute;
+  width: 308.6px;
+  height: 308.6px;
+  background-color: #1b2d22;
+  border-radius: 50%;
+  right: 134.25px;
+  top: 126.7px;
+}
+.circle-2 {
+  position: absolute;
+  width: 308.6px;
+  height: 308.6px;
+  background-color: #1b2d22;
+  border-radius: 50%;
+  right: 305.67;
+  top: 224px;
+}
+.hero-img {
+  display: block;
+  position: absolute;
+  width: 342.16px;
+  height: 619.63px;
+  right: 210.83px;
+  top: 0;
+}
+.right-side p {
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30.47px;
+  text-align: center;
+  margin-top: 12.5px;
+}
+.circle-3 {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  padding: 15px;
+  background-color: #fdde67;
+  border-radius: 50%;
+  right: 442.85px;
+  top: 114px;
+  z-index: 2;
+}
+.right-side span {
+  position: absolute;
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43.2px;
+  color: #ffffff;
+  top: 79px;
+  right: 530.96px;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 519px;
+  top: 551.63px;
+}
+.btn img {
+    margin: 0 6px;
+}
+.brands-ribbon {
+    width: 100%;
+    background-color: #181818;
+}
