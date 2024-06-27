@@ -10,30 +10,39 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Etalon</title>
   </head>
   <body>
     <section class="head">
       <div class="container">
         <div class="header row">
-          <p>Elaton</p>
-          <div class="contents">
-            <span>Home</span>
-            <span>Store</span>
-            <span>New</span>
-            <span>Contact</span>
+          <a href="#" title="go to home"><p>Elaton</p></a>
+          <div class="header-contents">
+            <a href="#" title="go to home"><span>Home</span></a>
+            <a href="#" title="go to store"><span>Store</span></a>
+            <a href="#" title="go to new items"><span>New</span></a>
+            <a href="#" title="go to contact"><span>Contact</span></a>
           </div>
-          <img
-            src="./assets/images/vectors/fi-rr-shopping-cart.svg"
-            alt="shopping-cart-vector"
-          />
+          <a href="#" title="go to store"
+            ><div class="cart-background">
+              <img
+                src="./assets/images/vectors/fi-rr-shopping-cart.svg"
+                alt="shopping-cart-vector"
+              /></div
+          ></a>
         </div>
         <div class="hero row">
           <div class="left-side">
             <p class="sale-text-1">2022</p>
             <p class="sale-text-2">Autumn Jackets</p>
             <p class="sale-text-3">Autumn Sale / Up to 50% OFF</p>
-            <p class="sale-button">Open Collection</p>
+            <a href="#" class="sale-button" role="button">Open Collection</a>
           </div>
           <div class="right-side">
             <span>$299</span>
@@ -43,8 +52,8 @@
                 OFF
               </p>
             </div>
-            <div class="circle-1"></div>
-            <div class="circle-2"></div>
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
             <img
               class="hero-img"
               src="./assets/images/hero.png"
@@ -55,15 +64,17 @@
               <li></li>
               <li></li>
             </ul>
-            <div class="btn-1">
-              <img
-                src="./assets/images/vectors/Frame 5.svg"
-                alt="next button"
-              />
-              <img
-                src="./assets/images/vectors/Frame 6.svg"
-                alt="pervious button"
-              />
+            <div class="dir-btn">
+              <a href="#" title="next image"
+                ><img
+                  src="./assets/images/vectors/Frame 5.svg"
+                  alt="next button"
+              /></a>
+              <a href="#" title="previous image"
+                ><img
+                  src="./assets/images/vectors/Frame 6.svg"
+                  alt="previous button"
+              /></a>
             </div>
           </div>
         </div>
@@ -72,48 +83,65 @@
     <section class="brands-ribbon">
       <div class="container">
         <div class="brands row">
-          <img src="./assets/images/vectors/Vector.svg" alt="addidas logo" />
-          <img src="./assets/images/vectors/Prada-Logo.svg" alt="prada logo" />
-          <img src="./assets/images/vectors/Logo_NIKE.svg" alt="nike logo" />
-          <img src="./assets/images/vectors/layer1.svg" alt="H&M logo" />
-          <img src="./assets/images/vectors/Gucci_Logo.svg" alt="gucci logo" />
-          <img
-            src="./assets/images/vectors/Blk_sports_logo.svg"
-            alt="blk logo"
-          />
+          <a href="https://www.adidas.com/us" title="go to addidas homepage"
+            ><img src="./assets/images/vectors/Vector.svg" alt="addidas logo"
+          /></a>
+          <a
+            href="https://www.prada.com/ww/en.html"
+            title="go to prada homepage"
+            ><img src="./assets/images/vectors/Prada-Logo.svg" alt="prada logo"
+          /></a>
+          <a href="https://www.nike.com/" title="go to nike homepage"
+            ><img src="./assets/images/vectors/Logo_NIKE.svg" alt="nike logo"
+          /></a>
+          <a
+            href="https://www.hm.com/entrance.ahtml?orguri=%2F"
+            title="go to h&m homepage"
+            ><img src="./assets/images/vectors/layer1.svg" alt="H&M logo"
+          /></a>
+          <a href="https://www.gucci.com/us/en/" title="go to gucci homepage"
+            ><img src="./assets/images/vectors/Gucci_Logo.svg" alt="gucci logo"
+          /></a>
+          <a href="https://www.blk-app.com/" title="go to blk homepage"
+            ><img
+              src="./assets/images/vectors/Blk_sports_logo.svg"
+              alt="blk logo"
+          /></a>
         </div>
       </div>
     </section>
     <section class="main">
       <div class="container">
-        <p class="txt-style">New Collection</p>
+        <h2>New Collection</h2>
         <div class="main-sale row">
           <div class="left-collection">
-            <p class="txt-style-2">Men’s Jacket Collection</p>
+            <h3 class="title">Men’s Jacket Collection</h3>
             <img src="./assets/images/jeans.png" alt="man with jeans" />
-            <p class="btn btn-2">Discover Now</p>
+            <a href="#" class="btn cart-btn-1">Discover Now</a>
           </div>
           <div class="right-collection">
             <img
               src="./assets/images/casual.png"
               alt="man with shirt and trousers"
             />
-            <p class="txt-style-3">
+            <h3 class="title title-pos">
               Men’s Sunglasses <br />
               Collection
-            </p>
+            </h3>
             <p class="off-style">40% OFF</p>
-            <p class="btn btn-3">Discover Now</p>
+            <a href="#" class="btn cart-btn-2" title="go to cart"
+              >Discover Now</a
+            >
           </div>
         </div>
       </div>
     </section>
     <section class="main-2">
       <div class="container">
-        <p class="txt-style">Best Sellers</p>
+        <h2>Best Sellers</h2>
         <div class="grid">
           <div class="card">
-            <div class="card-1">
+            <div class="card-contents">
               <label class="checkbox">
                 <input type="checkbox" name="checkbox-star" value="2" />
                 <div class="custom"></div>
@@ -129,15 +157,16 @@
                 <p>Fjallraven Backpack</p>
                 <span>$109.95</span>
               </div>
-              <img
-                class="shopping-card"
-                src="./assets/images/vectors/fi-rr-shopping-cart.svg"
-                alt="shopping-cart-vector"
-              />
+              <a href="#" title="add to cart"
+                ><img
+                  class="shopping-card"
+                  src="./assets/images/vectors/fi-rr-shopping-cart.svg"
+                  alt="shopping-cart-vector"
+              /></a>
             </div>
           </div>
           <div class="card">
-            <div class="card-1">
+            <div class="card-contents">
               <label class="checkbox">
                 <input type="checkbox" name="checkbox-star" value="2" />
                 <div class="custom"></div>
@@ -153,15 +182,16 @@
                 <p>Mens Cotton Jacket</p>
                 <span>$55.99</span>
               </div>
-              <img
-                class="shopping-card"
-                src="./assets/images/vectors/fi-rr-shopping-cart.svg"
-                alt="shopping-cart-vector"
-              />
+              <a href="#" title="add to cart"
+                ><img
+                  class="shopping-card"
+                  src="./assets/images/vectors/fi-rr-shopping-cart.svg"
+                  alt="shopping-cart-vector"
+              /></a>
             </div>
           </div>
           <div class="card">
-            <div class="card-1">
+            <div class="card-contents">
               <label class="checkbox">
                 <input type="checkbox" name="checkbox-star" value="2" />
                 <div class="custom"></div>
@@ -177,15 +207,16 @@
                 <p>Slim Fit T-Shirts</p>
                 <span>$22.3</span>
               </div>
-              <img
-                class="shopping-card"
-                src="./assets/images/vectors/fi-rr-shopping-cart.svg"
-                alt="shopping-cart-vector"
-              />
+              <a href="#" title="add to cart"
+                ><img
+                  class="shopping-card"
+                  src="./assets/images/vectors/fi-rr-shopping-cart.svg"
+                  alt="shopping-cart-vector"
+              /></a>
             </div>
           </div>
           <div class="card">
-            <div class="card-1">
+            <div class="card-contents">
               <label class="checkbox">
                 <input type="checkbox" name="checkbox-star" value="2" />
                 <div class="custom"></div>
@@ -200,27 +231,31 @@
             <div class="row">
               <div class="info">
                 <p>Mens Casual Slim Fit</p>
-                <span class="persentoff">$15.99</span><span>$11.25</span>
+                <div class="percentoff">
+                  <p>$15.99</p>
+                  <span>$11.25</span>
+                </div>
               </div>
-              <img
-                class="shopping-card"
-                src="./assets/images/vectors/fi-rr-shopping-cart.svg"
-                alt="shopping-cart-vector"
-              />
+              <a href="#" title="add to cart"
+                ><img
+                  class="shopping-card"
+                  src="./assets/images/vectors/fi-rr-shopping-cart.svg"
+                  alt="shopping-cart-vector"
+              /></a>
             </div>
           </div>
         </div>
-        <form>
-          <button class="submit" type="submit">Load More Products</button>
-        </form>
+        <div class="black-btn">
+          <a href="#" class="submit" title="go to store">Load More Products</a>
+        </div>
       </div>
     </section>
     <section class="footer">
       <div class="container">
         <div class="contents-style">
           <img src="./assets/images/shoe.png" alt="" />
-          <p class="ppp">70% OFF</p>
-          <p class="pppp">Sale ends soon</p>
+          <p class="fix">70% OFF</p>
+          <p class="fix-1">Sale ends soon</p>
           <div class="grid-1">
             <div class="box">3</div>
             <div class="box">23</div>

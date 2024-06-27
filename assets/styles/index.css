@@ -2,7 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Lato;
+
+}
+body {
+  font-family: 'Lato' ,sans-serif;
+}
+:root {
+  --yellow: #fdde67;
+  --white: #ffffff;
+  --grey: #ffffff4d;
+  --black: #181818;
+  --green: #3b5f47;
 }
 .container {
   width: 100%;
@@ -13,6 +23,9 @@
   display: flex;
   justify-content: space-between;
 }
+a {
+  text-decoration: none;
+}
 .header {
   padding-top: 25px;
   align-items: center;
@@ -21,19 +34,23 @@
   font-size: 36px;
   font-weight: 900;
   line-height: 40px;
-  color: #ffffff;
+  color: var(--white);
 }
-.contents span {
+.header-contents span {
   margin-right: 32px;
-  color: #ffffff4d;
+  color: var(--grey);
 }
-.contents span:hover {
-  color: #ffffff;
+.header-contents span:hover {
+  color: var(--white);
+}
+.cart-background {
+  width: 40px;
+  height: 40px;
+  background-color: var(--yellow);
+  border-radius: 50%;
 }
 .header img {
   padding: 12px;
-  background-color: #fdde67;
-  border-radius: 50%;
 }
 .hero {
   margin-top: 85.13px;
@@ -57,20 +74,24 @@
   font-style: italic;
   font-weight: 400;
   line-height: 72px;
-  color: #ffffff4d;
+  color: var(--grey);
 }
 .sale-text-2 {
   font-size: 112px;
   font-weight: 900;
   line-height: 100px;
   letter-spacing: 0.13em;
-  color: #ffffff;
+  color: var(--white);
 }
 .sale-text-3 {
   font-size: 25px;
   font-weight: 400;
   line-height: 30px;
   color: #ffffffcc;
+}
+.yellow-btn {
+  display: flex;
+  justify-content: left;
 }
 .sale-button {
   display: inline-block;
@@ -80,24 +101,23 @@
   line-height: 16.8px;
   color: #181818;
   border-radius: 6px;
-  background-color: #fdde67;
+  background-color: var(--yellow);
   margin-top: 25px;
+  margin-left: 0;
+  cursor: pointer;
 }
-.circle-1 {
+.circle {
   position: absolute;
   width: 308.6px;
   height: 308.6px;
   background-color: #1b2d22;
   border-radius: 50%;
+}
+.circle-1 {
   right: 134.25px;
   top: 126.7px;
 }
 .circle-2 {
-  position: absolute;
-  width: 308.6px;
-  height: 308.6px;
-  background-color: #1b2d22;
-  border-radius: 50%;
   right: 305.67;
   top: 224px;
 }
@@ -122,7 +142,7 @@
   width: 110px;
   height: 110px;
   padding: 15px;
-  background-color: #fdde67;
+  background-color: var(--yellow);
   border-radius: 50%;
   right: 442.85px;
   top: 114px;
@@ -134,7 +154,7 @@
   font-size: 36px;
   font-weight: 500;
   line-height: 43.2px;
-  color: #ffffff;
+  color: var(--white);
   top: 79px;
   right: 530.96px;
 }
@@ -150,26 +170,27 @@
   background-color: #ffffff33;
   border-radius: 50%;
   margin-bottom: 21px;
+  cursor: pointer;
 }
 .white-circles li:hover {
-  background-color: #ffffff;
+  background-color: var(--white);
   width: 21px;
   height: 21px;
   border-radius: 50%;
 }
-.btn-1 {
+.dir-btn {
   display: flex;
   justify-content: space-between;
   position: absolute;
   right: 519px;
   top: 551.63px;
 }
-.btn-1 img {
+.dir-btn img {
   margin: 0 6px;
 }
 .brands-ribbon {
   width: 100%;
-  background-color: #181818;
+  background-color: var(--black);
 }
 .brands {
   justify-content: space-between;
@@ -196,14 +217,14 @@
   left: 110.67px;
   top: 71.87px;
 }
-.txt-style {
+h2 {
   font-family: Lato;
   font-size: 48px;
   font-weight: 400;
   line-height: 48px;
   margin-bottom: 70px;
 }
-.txt-style-2 {
+.title {
   font-family: Lato;
   font-size: 24px;
   font-weight: 700;
@@ -211,26 +232,32 @@
   text-align: left;
   padding: 24px 25px;
 }
+.title-pos {
+  position: absolute;
+  text-align: center;
+  right: 96.5px;
+  top: 71.87px;
+}
 .btn {
   font-family: Lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
   position: absolute;
-  color: #ffffff;
+  color: var(--white);
   border-radius: 6px;
-  background-color: #181818;
+  background-color: var(--black);
   padding: 16px 40px;
 }
-.btn-2 {
+.cart-btn-1 {
   left: 309px;
   top: 477.75px;
 }
-.btn-3 {
+.cart-btn-2 {
   left: 525px;
   top: 477.75px;
 }
-form {
+.black-btn {
   display: flex;
   justify-content: center;
 }
@@ -241,14 +268,14 @@ form {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
-  color: #ffffff;
+  color: var(--white);
   border-radius: 6px;
   text-align: center;
-  background-color: #181818;
+  background-color: var(--black);
   padding: 16px 40px;
 }
 .right-collection {
-  background-color: #fdde67;
+  background-color: var(--yellow);
   border-radius: 24px;
   width: 56%;
   position: relative;
@@ -273,17 +300,7 @@ form {
   right: 96.5px;
   top: 247.38px;
 }
-.txt-style-3 {
-  font-family: Lato;
-  position: absolute;
-  text-align: center;
-  right: 96.5px;
-  top: 71.87px;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 40px;
-  padding: 24px 25px;
-}
+
 .main-sale {
   justify-content: space-between;
 }
@@ -297,8 +314,8 @@ form {
   height: 238.99px;
   margin: 50px;
 }
-.card-1 {
-  background-color: #ffffff;
+.card-contents {
+  background-color: var(--white);
   border-radius: 24px;
   position: relative;
 }
@@ -323,6 +340,19 @@ form {
   text-align: left;
   color: #00000099;
 }
+.percentoff {
+  display: flex;
+}
+.percentoff p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18.75px;
+  border-bottom: 1px solid #00000033;
+  line-height: 0.1em;
+  margin: 8.5px 12px 20px;
+  color: #00000033;
+}
 .offsale {
   font-family: Roboto;
   position: absolute;
@@ -333,12 +363,12 @@ form {
   margin: 16px;
   padding: 3px 6px;
   background-color: #3a5e46;
-  color: #ffffff;
+  color: var(--white);
 }
 .shopping-card {
   margin-top: 16px;
   border-radius: 6px;
-  background-color: #fdde67;
+  background-color: var(--yellow);
   padding: 11px;
 }
 .checkbox {
@@ -364,13 +394,13 @@ form {
 .foot-left {
   width: 32%;
   height: 450px;
-  background-color: #fdde67;
+  background-color: var(--yellow);
 }
 .foot-right {
   border: 0px, 0px, 0px, 500px;
   width: 68%;
   height: 450px;
-  background-color: #3b5f47;
+  background-color: var(--green);
 }
 .footer img {
   width: 450px;
@@ -382,7 +412,7 @@ form {
 .contents-style {
   position: relative;
 }
-.ppp {
+.fix {
   position: absolute;
   font-family: Roboto;
   font-size: 64px;
@@ -391,13 +421,13 @@ form {
   top: 78px;
   left: 0;
 }
-.pppp {
+.fix-1 {
   position: absolute;
   font-family: Lato;
   font-size: 64px;
   font-weight: 700;
   line-height: 48px;
-  color: #ffffff;
+  color: var(--white);
   top: 78px;
   right: 337px;
 }
@@ -410,7 +440,7 @@ form {
   font-size: 64px;
   font-weight: 700;
   line-height: 48px;
-  color: #ffffff;
+  color: var(--white);
   right: 0;
   top: 219.47px;
 }
@@ -428,4 +458,7 @@ form {
   line-height: 28.13px;
   text-align: center;
   margin-top: -36px;
+}
+@media screen and (min-width: 500px) {
+  
 }
