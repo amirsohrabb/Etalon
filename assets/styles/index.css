@@ -158,14 +158,14 @@
     height: 21px;
     border-radius: 50%;
 }
-.btn {
+.btn-1 {
   display: flex;
   justify-content: space-between;
   position: absolute;
   right: 519px;
   top: 551.63px;
 }
-.btn img {
+.btn-1 img {
     margin: 0 6px;
 }
 .brands-ribbon {
@@ -176,4 +176,99 @@
 .brands {
     justify-content: space-between;
     padding: 30px 0;
+}
+.main ,.main-2 {
+  padding: 70px 0;
+}
+.left-collection {
+    background-color: #C5C2CA;
+    border-radius: 24px;
+    width: 39%;
+    position: relative;
+    height: 550.75px;
+
+}
+.left-collection img {
+    display: block;
+    width: 278.66px;
+    height: 478.88px;
+    transform: scaleX(-1);
+    justify-content: center;
+    position: absolute;
+    left: 110.67px;
+    top: 71.87px;
+}
+.txt-style {
+  font-family: Lato;
+font-size: 48px;
+font-weight: 400;
+line-height: 48px;
+margin-bottom: 70px;
+}
+.txt-style-2 {
+  font-family: Lato;
+font-size: 24px;
+font-weight: 700;
+line-height: 40px;
+text-align: left;
+padding: 24px 25px;
+}
+.btn {
+  font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.8px;
+position: absolute;
+color: #FFFFFF;
+border-radius: 6px;
+background-color: #181818;
+padding: 16px 40px;
+}
+.btn-2 {
+left: 309px;
+top: 477.75px;
+}
+.btn-3 {
+  left: 525px;
+  top: 477.75px;
+}
+.right-collection {
+    background-color: #FDDE67;
+    border-radius: 24px;
+    width: 56%;
+    position: relative;
+}
+
+.right-collection img {
+    display: block;
+    width: auto;
+    height: 520.12px;
+    padding-left: ;
+    position: absolute;
+    left: 50px;
+    top: 30.64px;
+}
+.off-style {
+  font-family: Roboto;
+font-size: 48px;
+font-weight: 700;
+line-height: 56.25px;
+text-align: center;
+position: absolute;
+right: 96.5px;
+top: 247.38px;
+}
+.txt-style-3 {
+  font-family: Lato;
+  position: absolute;
+  text-align: center;
+  right: 96.5px;
+  top: 71.87px;
+font-size: 24px;
+font-weight: 700;
+line-height: 40px;
+padding: 24px 25px;
+}
+.main-sale {
+    justify-content: space-between;
 }
