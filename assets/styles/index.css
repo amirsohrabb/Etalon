@@ -52,6 +52,9 @@ a {
   background-color: var(--yellow);
   border-radius: 50%;
 }
+.cart-background:hover {
+  background-color: #FFEB9D;
+}
 .header img {
   padding: 12px;
 }
@@ -104,6 +107,9 @@ a {
   margin-top: 25px;
   margin-left: 0;
   cursor: pointer;
+}
+.sale-button:hover {
+  background-color: #FFEB9D;
 }
 .circle {
   position: absolute;
@@ -172,8 +178,15 @@ a {
 }
 .white-circles li:hover {
   background-color: var(--white);
-  width: 21px;
+  transform: scale(
+    1.2
+  );
+  /* width: 21px;
   height: 21px;
+  margin-bottom: 18.5px;
+  margin-top: -2.5px;
+  margin-right: -2.5px;
+  margin-left: -2.5px; */
   border-radius: 50%;
 }
 .dir-btn {
@@ -226,11 +239,12 @@ h2 {
   font-weight: 700;
   line-height: 40px;
   padding: 24px 25px;
+  letter-spacing: 1px;
 }
 .title-pos {
   position: absolute;
   text-align: center;
-  right: 96.5px;
+  right: 70px;
   top: 71.87px;
 }
 .btn {
@@ -390,7 +404,6 @@ h2 {
   background-color: var(--yellow);
 }
 .foot-right {
-  border: 0px, 0px, 0px, 500px;
   width: 68%;
   height: 450px;
   background-color: var(--green);
@@ -592,11 +605,11 @@ h2 {
   .card-contents {
     width: 227.75px;
     height: 220px;
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-x: scroll;
   }
   .shopping-card {
     scale: 80%;
-    flex-wrap: wrap;
   }
   .info p {
     font-size: 16px;
